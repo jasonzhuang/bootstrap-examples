@@ -22,7 +22,7 @@
            <!--sidebar-->
            <div id="myTabs" class="col-md-3">
                <ul class="nav">
-                   <li class="active" data-toggle="tab">
+                   <li class="active" >
                        <a href="#dropdowns">Dropdowns</a>
                        <!--<ul class="nav">
                            <li class=""><a href="#dropdowns-example">Example</a></li>
@@ -31,7 +31,7 @@
                            <li class=""><a href="#dropdowns-disabled">Disabled menu items</a></li>
                        </ul>-->
                    </li>
-                   <li class="" data-toggle="tab">
+                   <li class="" >
                        <a href="#nav">Navs</a>
                        <!--<ul class="nav">
                            <li class=""><a href="#nav-tabs">Tabs</a></li>
@@ -42,11 +42,10 @@
                            <li><a href="#nav-dropdowns">Using dropdowns</a></li>
                        </ul>-->
                    </li>
-                   <li class="" data-toggle="tab"><a href="#breadcrumbs">Breadcrumbs</a></li>
-                   <li class="" data-toggle="tab"><a href="#labels">Labels</a></li>
-                   <li class="" data-toggle="tab"><a href="#badges">Badges</a></li>
-                   <li class="" data-toggle="tab"><a href="#jumbotron">Jumbotron</a></li>
-                   <li class="" data-toggle="tab"><a href="#page-header">Page header</a></li>
+                   <li class="" ><a href="#breadcrumbs">Breadcrumbs</a></li>
+                   <li class="" ><a href="#labels">Labels</a></li>
+                   <li class="" ><a href="#badges">Badges</a></li>
+                   <li class="" ><a href="#page-header">Page header</a></li>
                </ul>
            </div>
            <!--main content-->
@@ -80,9 +79,12 @@
 <script src="../bower_components/jquery/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    $('#myTabs a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
+    $(function(){
+        //init tabs
+        $('#myTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
     })
 </script>
 </body>
